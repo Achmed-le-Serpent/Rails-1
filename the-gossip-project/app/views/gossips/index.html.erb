@@ -1,0 +1,17 @@
+<h1>Gossips</h1>
+
+<% @gossip.each do |gossip| %>
+
+	<h1><%= gossip.anonymous_author %></h1>
+
+	<p><%= gossip.content %></p>
+
+	<a href="<%= gossip_path(gossip.id) %>" data-method="delete" >Supprimer</a>
+
+<% end %>
+
+<p>
+
+	<a href="<%= new_gossip_path %>" >Créer un gossip</a>
+
+</p>

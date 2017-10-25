@@ -1,0 +1,16 @@
+<h1><%= @gossip.anonymous_author %></h1>
+
+
+<p><%= @gossip.content %></p>
+
+<p>
+
+	<a href="<%= edit_gossip_path(@gossip.id) %>" >éditer le gossip</a>
+
+</p>
+
+<p>
+
+	<a href="<%= gossips_path %>" >revenir aux gossips</a>
+
+</p>

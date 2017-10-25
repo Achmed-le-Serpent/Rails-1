@@ -1,0 +1,27 @@
+<h1>Créer un gossip</h1>
+
+ <%= form_for @gossip do |f| %>
+
+   <div>
+
+   	<label>Vous êtes ?</label>
+
+   	<%= f.text_field :anonymous_author %>
+
+   </div>
+
+   <div>
+
+   	<label>Contenu du gossip</label>
+
+   	<%= f.text_area :content %>
+
+   </div>
+
+   <div>
+
+   	<button type="submit" >Créer un gossip</button>
+
+   </div>
+
+ <% end %>
